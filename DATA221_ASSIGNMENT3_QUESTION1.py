@@ -7,20 +7,26 @@ import pandas as pd
 # Import the numpy package under the alias np
 import numpy as np
 
+# Read the crime1.csv file and load it into a dataframe
 crime_stats_data_frame = pd.read_csv("crime1.csv")
 
+# Find and print the mean violent crimes per population
 mean_of_violent_crimes_per_population = np.mean(crime_stats_data_frame["ViolentCrimesPerPop"])
 print(mean_of_violent_crimes_per_population)
 
+# Find and print the median violent crimes per population
 median_of_violent_crimes_per_population = np.median(crime_stats_data_frame["ViolentCrimesPerPop"])
 print(median_of_violent_crimes_per_population)
 
+# Find and print the standard deviation of  violent crimes per population
 standard_deviation_of_violent_crimes_per_population = np.std(crime_stats_data_frame["ViolentCrimesPerPop"])
 print(standard_deviation_of_violent_crimes_per_population)
 
+# Find and print the minimum value of violent crimes per population
 minimum_value_of_violent_crimes_per_population = np.min(crime_stats_data_frame["ViolentCrimesPerPop"])
 print(minimum_value_of_violent_crimes_per_population)
 
+# Find and print the maximum value of violent crimes per population
 maximum_value_of_violent_crimes_per_population = np.max(crime_stats_data_frame["ViolentCrimesPerPop"])
 print(maximum_value_of_violent_crimes_per_population)
 
