@@ -2,7 +2,7 @@
 # February 10, 2026
 # DATA221, Assignment 3, Question 2
 
-# Import matplotlib.pyplot under the aias plt
+# Import matplotlib.pyplot under the alias plt
 import matplotlib.pyplot as plt
 # Import pandas package under the alias pd
 import pandas as pd
