@@ -63,3 +63,32 @@ print("Recall:", recall_of_classification_model)
 # Calculate and print the f1-score of our model using the real and predicted values.
 f1_of_classification_model = f1_score(labels_test, predicted_labels)
 print("F1 Score:", f1_of_classification_model)
+
+# Question 1:
+# Here are what the four states of the Confusion Matrix would mean in this scenario.
+# True Positive: A person with CKD is identified as having CKD.
+# True Negative: A person who does not have CKD is identified as not having CKD.
+# False Positive: A person who does not have CKD is identified as having CKD.
+# False Negative: A person with CKD is identified as not having CKD
+
+# Question 2:
+# A high accuracy can be misleading since the accuracy formula is vulnerable to
+# being affected by some hidden, confounding variables. Some of the problems that may
+# make the accuracy of a model look misleading are imbalanced data, where too much of the
+# data is skewed towards one value. An imbalanced dataset could make the model's ability
+# to predict values impractical since the model will be more inclined to predict
+# towards a certain direction. Another problem that accuracy has is that it can be
+# an oversimplification of the model's ability to predict correctly and may leave out
+# important information. For more serious tests, such as cancer detection, a false negative
+# would be a much more serious matter, however, accuracy does not have any way of telling
+# you this.
+
+# Question 3:
+# The most important metric for a missing CKD case (False Negative) is the Recall metric. Recall measures
+# the 'power' of the model by measuring the total True Positives over the sum of True Positives and False Negatives.
+# Through this metric, if a model performs badly and produces too many False Negatives, the recall
+# metric can detect this since a higher False Negative value will cause the recall metric to be lower.
+# If we were to use accuracy to measure the model's metric for false negatives, it would not
+# work quite as well. Since accuracy is more of a generalization of the model performance due to the
+# greater number of variables used within its formula, it does not measure a specific aspect of the
+# model and may miss crucial shortcomings of the model.

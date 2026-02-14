@@ -65,3 +65,24 @@ print(accuracy_and_k_value_table)
 # Locate the row with the highest accuracy and store it in this variable
 best_k_value = accuracy_and_k_value_table.loc[accuracy_and_k_value_table["Accuracy"].idxmax()]
 print("\nThe value of k that gives the highest test accuracy is", int(best_k_value["k value"]))
+
+# Question 1:
+# Changing the k-value affects how much influence the model places on each nearest neighbor.
+# If we use a smaller k-value, then each neighbor that the model uses to train itself has a
+# greater influence in training the model. The model also becomes much more sensitive to
+# messy, 'noisy' data since it may not be able to find general patterns (it may get too stuck
+# in the details). A larger k-value places less emphasis on each nearest neighbor and takes a
+# broad approach to looking at the data.
+
+# Question 2:
+# Small values of k may cause overfitting since the model may base its predictions off of
+# limited information. This may be a problem since the model might not be able to detect general
+# trends and patterns. Smaller k-values may also be more sensitive to noise since the inability
+# to find general patterns means that more emphasis is placed on the noisy data.
+
+# Question 3:
+# Large values of k may cause underfitting since the model may base its predictions off of
+# too much information. This may be a problem since the model may ignore important patterns
+# by not picking up important details since less emphasis is placed on each nearest neighbor.
+# Although a higher k-value may help to reduce the impact that noisy data may have, it may also
+# oversimplify the model and struggle to notice any patterns if the k-value is too high.
