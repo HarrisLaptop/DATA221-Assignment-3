@@ -45,7 +45,7 @@ plt.show() # Reveals the boxplot
 
 # Question 3:
 # The boxplot does not suggest any presence of outliers. If we look at the whiskers of the boxplot, the
-# lower whiskers extend downwards close to 0. The upper whiskers extend uppwards close to 1. Since the boundaries this
+# lower whiskers extend downwards close to 0. The upper whiskers extend upwards close to 1. Since the boundaries this
 # variable tracks is limited to 0% and 100% (0.00 to 1.00), then there are few values, if any, that could lie outside
 # the whisker range and still be within the bounds of the numerical variable. Box plots also explicitly tell you
 # if there are any outliers. Any dots that extend outside of each end of whiskers are outlier points. Since there are
